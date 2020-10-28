@@ -2,8 +2,11 @@
 #test README
 
 #give summary of original data sets
+*use table from proposal
 #what does each bring?
+*compare the different drought indices
 #what does the final dataset look like?
+*make new summary table 
 
 #goals
 *how do drought trends change from 2000 - 2016
