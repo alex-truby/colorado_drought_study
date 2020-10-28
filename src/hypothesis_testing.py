@@ -41,8 +41,6 @@ if __name__ == '__main__':
     #some incorrect readings in the Water Level Depth Column - will take out anything that is <0 for analysis (typos)
     gw = gw[gw['Water Level Depth'] >0]
 
-    #data frame to be used in linear regression analysis
-    yearly_data = gw.groupby('year').mean().reset_index()
 
     #hypothesis testing comparing only data sets from 2000 v. 2016
     drought_mon_vals_2000 = convert_col_to_arrary(2000, cleaned_data, 'year', 'drought_vals')
@@ -66,8 +64,8 @@ if __name__ == '__main__':
     print(f"Water Level Depth p-value for 2000 v. 2016 Comparison is: {water_depths_t_p[1]}")
 
     #linear regression confidence intervals on the slope
-    print("\n", "Drought Monitor t-test Results", "\n", ols_model_fit(yearly_data, 'month_index', 'drought_vals'))
-    print("\n", "Palmer Drought Sevrity Index t-test Results", "\n", ols_model_fit(yearly_data, 'month_index', 'pdsi'))
-    print("\n", "Standardised Precipitation-Evapotranspiration Index", "\n", ols_model_fit(yearly_data, 'month_index', 'spei'))
-    print("\n", "Water Level Depth t-test Results", "\n",ols_model_fit(yearly_data, 'month_index', 'Water Level Depth'))
+    print("\n", "Drought Monitor t-test Results", "\n", ols_model_fit(cleaned_data, 'month_index', 'drought_vals'))
+    print("\n", "Palmer Drought Sevrity Index t-test Results", "\n", ols_model_fit(cleaned_data, 'month_index', 'pdsi'))
+    print("\n", "Standardised Precipitation-Evapotranspiration Index", "\n", ols_model_fit(cleaned_data, 'month_index', 'spei'))
+    print("\n", "Water Level Depth t-test Results", "\n",ols_model_fit(gw, 'month_index', 'Water Level Depth'))
     
