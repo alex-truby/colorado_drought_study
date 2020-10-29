@@ -109,7 +109,7 @@ After answering the questions around how each variable has changed over the spec
 
   <tr>
     <td><img src="./images/var_correlation_small.png" width=480 height=480></td>
-    <td><img src="./images/pval_final.png" width=480 height=480></td>
+    <td><img src="./images/pvals_final.png" width=480 height=480></td>
   </tr>
  </table>
 
