@@ -99,6 +99,8 @@ This time, rather than a standard t-test on two data sets, a linear regression o
 
 The results above substantiate the previous conclusion that the PDSI has significantly changed over this time period, with a p-value of near zero and both the lower and upper end of the confidence interval containing positive slopes. Additionally, using the linear regression methodoly on the slope rather than simply comparing two snapshots in time indicates that there is also a significant change in water well levels over this time period. More weight will be put on the results of this methodology because it uses data over the entire time period, rather than just the start and end years. Therefor we can conclude the following: 1) Both the PDSI and water well levels *have* significantly changed from 2000 - 2016, and 2) There *is not* enough evidence to conlude that the UDSM and SPEI have significantly changed over these years.
 
+It is important to remember that a positive PDSI value indicates *more moisture*, so the positive slope confidence interval for this variable indicates that the trend is one toward *increaseing moisture* over the years 2000 - 2016. On the same note, the the ground water levels here indicate distance from surface. So, the increasing slope indicates that ground water levels are *decreasing* over this time period. 
+
 I was a bit surprised at how *different* the results for the three drought indicators were, considering they should theoretically all be measuring the same thing. With the results of this linear regression, someone could hypothetically pick and choose which drought indicator to use as their null hyptohesis, and then point to statistics to "prove" their hypothesis, even though someone with an opposing hypothesis could also do the same thing... interesting.
 
 ### **_Round 3_**
@@ -114,9 +116,13 @@ After answering the questions around how each variable has changed over the spec
  </table>
 
 
-The results of this test indicate that even though both the PDSI and water levels individually deomstrate meaningful change from 2000 - 2016, they do not seem to be correlated with one another. Surprisingly, the PDSI showed strong correlation with both the UDSM and SPEI drought indicators. This correlation was re-enforced with p-values below 0.01, leading to the rejection of the null hyptohesis that there is no correlation between the PDSI and USDM and PDSI and SPEI indicators. While this was unexpected becasue neither the USDM nor SPEI indicators demonstrated meaningful change over the time period of the study, it is reassuring to see that indices which are supposed to be measuring the same thing do indeed show a correlation. Furthermore, these results indicate that well water levels do not seem to correleate strongly with *any* of the three drought indicators.
+The results of this test indicate that even though both the PDSI and water levels individually deomstrate meaningful change from 2000 - 2016, they do not seem to be correlated with one another. Surprisingly, the PDSI showed strong correlation with both the UDSM and SPEI drought indicators. This correlation was re-enforced with p-values below 0.01, leading to the rejection of the null hyptohesis that there is no correlation between the PDSI and USDM and PDSI and SPEI indicators. While this was unexpected because neither the USDM nor SPEI indicators demonstrated meaningful change over the time period of the study, it is reassuring to see that indices which are supposed to be measuring the same thing do indeed show a correlation. Furthermore, these results indicate that well water levels do not seem to correleate strongly with *any* of the three drought indicators.
 
+## **_Round 4_**
 
+Given the results from the tests above, the PDSI seemed like the most reliable indicator to hone in on. While we have confirmed that there has been meaningful change for this variable over the yeras 2000 - 2016, we can dig further into the length of each drought period with the bar chart below.
+
+![PDSI Chart by Month](.images/PDSI_by_month)
 
 #no correlation between well water levels and drought
 
