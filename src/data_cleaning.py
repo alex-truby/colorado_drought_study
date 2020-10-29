@@ -40,6 +40,7 @@ def join_col(df, col_list):
 if __name__ == '__main__':
     
     #data tablle cleaned to get County: FIPS dictinary and FIPS list to be used in joins later
+    #file should be updated to reflect users file structure
     western_drought_df = pd.read_csv('./../capstone1/data/western_us_drought.csv')
     co_state_df = western_drought_df[western_drought_df['State'] == 'CO'].reset_index()
     co_state_df['County'] = co_state_df['County'].str.replace('County',"")
