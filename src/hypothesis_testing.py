@@ -25,7 +25,7 @@ def ols_model_fit(df, col1, col2):
 
 
 if __name__ == '__main__':
-    cleaned_data = pd.read_csv('./../capstone1/data/monthly_data_withdates.csv')
+    cleaned_data = pd.read_csv('./../data/monthly_data_withdates.csv')
     cleaned_data['y_m'] = cleaned_data['date'].str.replace("-", "").astype(int)-20000000
     cleaned_data = cleaned_data.groupby('y_m').mean().reset_index()
     cleaned_data = cleaned_data.reset_index()
@@ -40,6 +40,7 @@ if __name__ == '__main__':
 
     #some incorrect readings in the Water Level Depth Column - will take out anything that is <0 for analysis (typos)
     gw = gw[gw['Water Level Depth'] >0]
+    print(gw.shape)
 
 
     #hypothesis testing comparing only data sets from 2000 v. 2016
