@@ -122,7 +122,7 @@ The results of this test indicate that even though both the PDSI and water level
 
 Given the results from the tests above, the PDSI seemed like the most reliable indicator to hone in on. While we have confirmed that there has been meaningful change for this variable over the yeras 2000 - 2016, we can dig further into the length of each drought period with the bar chart below.
 
-![PDSI Chart by Month](.images/PDSI_by_month.png)
+![PDSI Chart by Month](./images/PDSI_by_month.png)
 
 #no correlation between well water levels and drought
 
