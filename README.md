@@ -7,7 +7,7 @@
 ## Background and Motivating Questions 
 The news cycle in the year of 2020 has been quite the wild ride. Living in Colorado, *just a few* of the topics of note have been drought and wildfire, seeing as many residents here have been personally effected by both. As a Colorado resident, both of these events are particularly concerning. As a water engineer however, I am more intrigued about any trends we might be realzing in drought over the years, and what impact it might have on Colorado water resources. As such, the goal of this capstone project is to explore the following questions:
 
-* **Has drought severity increased in Colorado between the years of 2000 and 2016?**
+* **Has drought severity changed in Colorado between the years of 2000 and 2016?**
 * **Have groundwater well depth levels changed between the years of 2000 and 2016?**
 * **Are there any signifanct differences between the drought indicators chosen for this study?**
 * **What relationship, if any, is there between drought severity and water level depths in ground water wells in Colorado over the last twnety years?**
@@ -116,21 +116,32 @@ After answering the questions around how each variable has changed over the spec
  </table>
 
 
-The results of this test indicate that even though both the PDSI and water levels individually deomstrate meaningful change from 2000 - 2016, they do not seem to be correlated with one another. Surprisingly, the PDSI showed strong correlation with both the UDSM and SPEI drought indicators. This correlation was re-enforced with p-values below 0.01, leading to the rejection of the null hyptohesis that there is no correlation between the PDSI and USDM and PDSI and SPEI indicators. While this was unexpected because neither the USDM nor SPEI indicators demonstrated meaningful change over the time period of the study, it is reassuring to see that indices which are supposed to be measuring the same thing do indeed show a correlation. Furthermore, these results indicate that well water levels do not seem to correleate strongly with *any* of the three drought indicators.
+The results of this test indicate that even though both the PDSI and water levels individually deomstrate meaningful change from 2000 - 2016, they do not seem to be correlated with one another. Surprisingly, the PDSI showed strong correlation with both the UDSM and SPEI drought indicators. This correlation was re-enforced with p-values below 0.01, leading to the rejection of the null hyptohesis that there is no correlation between the PDSI and USDM and PDSI and SPEI indicators. While this was unexpected because neither the USDM nor SPEI indicators demonstrated meaningful change over the time period of the study, it is reassuring to see that indices which are supposed to be measuring the same thing do indeed show a correlation. Another interesting aspect is that the USDM indicator did *not* correlate highly with the SPEI indicator. One reason for this may be that the USDM puts less weight on the precipitation index in it's model than does the PDSI model. Furthermore, these results indicate that well water levels do not seem to correleate strongly with *any* of the three drought indicators.
 
-## **_Round 4_**
+### **_Round 4_**
 
-Given the results from the tests above, the PDSI seemed like the most reliable indicator to hone in on. While we have confirmed that there has been meaningful change for this variable over the yeras 2000 - 2016, we can dig further into the length of each drought period with the bar chart below.
+Given the results from the tests above, the PDSI seemed like the most reliable indicator to hone in on since it was correlated with both of the other drought indicators. While we have confirmed that there has been meaningful change for this variable over the years 2000 - 2016, we can dig further into the length of each drought event with the bar chart below.
 
 ![PDSI Chart by Month](./images/PDSI_by_month.png)
 
-#no correlation between well water levels and drought
+ This chart gives a bit more insight into the drought events themselves, in that it illustates not only the severity, but also the length of each drought event. For example, while it is clear that a majority of the time there has been at least a few near normal months each year, during the years of 2002 - 2003 the state never left drought conditations. Alternatively, the years 2014 - 2016 never entered drought conditions. It would be intereseting to see if this period of no drought held true out past 2016, and what implications it might have on the hypothesis tests performed earlier on this data set.  
 
-
-#after finding no correlation between these - wanted to focus on how drought and water level depths are trending over the state indiviually with time
 
 ## Conclusion
-Null hypothesis were that there is no significant chagnes over the years and that none of the variables are correlated
+The stated goals of this study were to address the following questions:
+
+* **Has drought severity changed in Colorado between the years of 2000 and 2016?**
+* **Have groundwater well depth levels changed between the years of 2000 and 2016?**
+* **Are there any signifanct differences between the drought indicators chosen for this study?**
+* **What relationship, if any, is there between drought severity and water level depths in ground water wells in Colorado over the last twnety years?**
+
+With regards to the first question, the data has illustrated that there *has* been a signifianct change in the PDSI indicator over the tipe period of 2000 - 2016. The shift over this particular time period was one from more drought to less drought. The other two indicators did *not* show a meaninful change over this time period. 
+
+In regards to ground water well depths, the conclusion was not as clear cut. The first hypothesis t-test concluded that there was not enough data to illustrate a meaningful shift over the years, but the linear regression model *did* illustrate a meaningful change in groundwater levels between 2000 - 2016. Because the linear regression model uses more data points to look at the trend as a whole, rather than two snapshots in time, the conclusion that there *is* a meaningful shift is better supported.
+
+As demonstraed by both the hypothesis tests and the correlation matrix, there *are* differences between each of the three drought indicators. The PDSI indicator demonstrated the highest correlation with other other two indices, and would be the recommended indicator to move forward with in a study where only one can be utilized. 
+
+Additionally, the data does *not* support a relationship between any of the drought indicators and ground water level depths. 
 
 
 ## Next Steps
