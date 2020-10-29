@@ -36,7 +36,7 @@ The search for drought a drought data set quickly led to the realization that th
 * **Standardized Precipitation Evapotranspiration Index (SPEI) -** The SPEI is an extension of the precipitaion index utilized in the PDSI model, but also includes potential surface water evapotranspiration. Because of this, the SPEI should also account for the impact on water demand from increased temperature. More information can be found [here](https://climatedataguide.ucar.edu/climate-data/standardized-precipitation-evapotranspiration-index-spei).
 *  **United States Drought Monitor (UDSM) -** The USDM is published and mainted by the National Drought Mitigation Center at the University of Nebraska-Lincoln. The UDSM utilizes the PDSI as one of the inputs for the model, along with soil moisture, weekly streamflow measurements from the USGS, and Objective Drought Indicators from the Univserity. More information on this index can be found [here](https://droughtmonitor.unl.edu/About/AbouttheData/DroughtClassification.aspx).
 
-Rather than blindly choosing one of the above indicators as the basis of this study,  I decided to utilize all three, and compare the results from each. 
+Rather than blindly choosing one of the above indicators as the basis of this study,  all three were evaluated, and the reuslts from each compared. 
 
 -----
 
@@ -62,14 +62,41 @@ The first dive into the data set involved comparing a snapshot of each variable 
 Before running the hypothesis tests, histograms of the mean drought indices and water well levels were created in order to gain insight as to how the means of each variable may have shifted over this time frame. The values captured here represent the mean values across across all Colorado counties to get a better feel for the condition of the state as a whole.
 
 
+![Histograms](./images/variable_histograms.png)
+
+
+As illustrated in the charts above, there seems to be at least some shift across the board between 2000 and 2016.  It cannot be determined however, whether or not this is enough of a shift to be statistically meaningful without first running a hypothesis test...
+
+As stated previously, the null hypthesis for each variable is that there is not a significant change between 2000 and 2016. A frequentist approach was used to run this test, assuming a significance threshold of 0.05. A t-test was then performed to obtain the p-value for each of the four hypothesis, with the following results:
+
+|Variable       | p-value |
+| ------------- | ------- |
+|USDM           |  0.901  |
+| PDSI          | 0.001   |
+|SPEI           |  0.920  |
+|Water Levels   | 0.095   |
+
+The above results indicate that only in regards to the PDSI is there a signifance difference between the years 2000 and 2016, based on the significance level of 0.05. Unsurprisingly, these are also the two variables with the mort noticable shift in mean values illustrated in the histograms above.
+
+
 ### **_Round 2_**
-The next step was to determine whether or not the difference in the variables between these two years was part of a larger trend, or if it was a one off occurance. 
+The next step was to determine whether or not the difference in the variables between these two years was part of a larger trend, or if it was a one off occurance. And on the same note, even though the snapshot comparison may not have indicated a significant difference for the USDM and SPEI indicators over the years, might a continuous trend lead to a different conlusion?
 
-#talk first about comparison of just 2000 v 2016 - start with plots, then hyptohesis tests
+To get a better understanding of the trends over the entire time period from 2000 - 2016, the following plots illustrate the mean values across across all Colorado counties for each month in this timeframe for each variable. Looking at the data in this continuous manner helps to paint a more clear pictures around what exactly was happending over this time frame. Again, the values captured here represent the mean values across across all Colorado counties for each month in this timeframe.
 
-#how are the drought indices different (if at all)?
-#how has water well depth changed since 2000 (if at all)
-#is there any correlation between drought and water well levels
+![Continuous Trends](./images/continuous_trends_1\.png)
+
+While a direct comparison can't be made to the histograms providing only a snapshot presented previously, it seems as as though both PDSI and water level depths illustrate an overall change in slope over the entire time period. Let's dig deeper with another hypothesis test...
+
+This time, rather than a standard t-test on two data sets, a linear regression ordinary least squares approach was used to find both the confidence interval for the slope over the alotted timeframe, as well as the p-value. Again, the null hypothesis here is that there is not a meaningful trend for any of the variables over the years 2000 - 2016. If the confidence interval contains zero, there is not enough evidence to state that the variable trends in a certain direction over this time period. The table below captures these results.
+
+|Variable      | Confidence Interval   | p-value |
+| ------------ | --------------------- | ------- |
+| UDSM         | -0.005 to 0.001       | 0.234   |
+| PDSI         | 0.010 to  0.019       | <0.01   |
+| SPEI         | -0.001 to 0.003       | 0.196   |
+| Water Levels | 0.619 to 2.062        | <0.01   |
+
 
 #plots to highlight
 
