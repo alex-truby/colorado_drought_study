@@ -90,6 +90,7 @@ As stated previously, the null hypthesis for each variable is that there is not 
 
 
 <div align="center">
+
 |Variable       | p-value |
 | ------------- | ------- |
 |USDM           |  0.901  |
