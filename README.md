@@ -1,11 +1,11 @@
-# A Study of Drought Trends in Colorado and Impact on Colorado Water Wells, 2000 - 2016
+# A Study of Drought Trends in Colorado and Impact on Colorado Water Well Levels, 2000 - 2016
 ### *Galvanize DSI Capstone 1*
 ### *Alex Truby*
 
 -------------
 
 ## Background and Motivating Questions 
-The news cycle in the year of 2020 has been quite the wild ride. Living in Colorado, *just a few* of the topics of note have been drought and wildfire, seeing as many residents here have been personally effected by both. As a Colorado resident, both of these events are particularly concerning. As a water engineer however, I am more intrigued about any trends we might be realzing in drought over the years, and what impact it might have on Colorado water resources. As such, the goal of this capstone project is to explore the following questions:
+The news cycle in the year of 2020 has been quite the wild ride. Living in Colorado, *just a few* of the topics of note have been drought and wildfire. Many residents here have been personally effected by both. As a Colorado resident, both of these events are particularly concerning. As a water engineer however, I am more intrigued about any trends we might be realzing in drought over the years, and what impact it might have on Colorado water resources. As such, the goal of this capstone project is to explore the following questions:
 
 * **Has drought severity changed in Colorado between the years of 2000 and 2016?**
 * **Have groundwater well depth levels changed between the years of 2000 and 2016?**
@@ -13,20 +13,20 @@ The news cycle in the year of 2020 has been quite the wild ride. Living in Color
 * **What relationship, if any, is there between drought severity and water level depths in ground water wells in Colorado over the last twnety years?**
 
 
-The search for drought a drought data set quickly led to the realization that there are, in fact, a few different indicators out there to measure drought. The three indices utilized in this study are as follows:
-*  **Palmer Drought Severity Index (PDSI) -** Maintained by the National Center for Atmospheric Research (NCAR)  and the University Coporation for Atmospheric Research (UCAR) in Boulder and the University of Albany, the PDSI captures drought with a model  utilizing both termperature data and a physical water balance model. More information can be found [here](https://climatedataguide.ucar.edu/climate-data/palmer-drought-severity-index-pdsi).
+The search for a drought data set quickly led to the realization that there are, in fact, a few different indicators out there to measure drought. The three indices utilized in this study are as follows:
+*  **Palmer Drought Severity Index (PDSI) -** Maintained by the National Center for Atmospheric Research (NCAR)  and the University Coporation for Atmospheric Research (UCAR) in Boulder, the PDSI captures drought with a model  utilizing both termperature data and a physical water balance model. More information can be found [here](https://climatedataguide.ucar.edu/climate-data/palmer-drought-severity-index-pdsi).
 
 <center>
 
-| Drought Severity | PDSI Range     |
-| ---------------- | -------------- |
-| Extemely Drought | -4.0 or less   |
-| Severe Drought   | -3.0 to -3.9   |
-| Moderate Drought | -2.0 tp -2.9   |
-| Near Normal      | -1.9 to 1.9    |
-| Unusually Moist  | 2.0 to 2.9     |
-| Very Moist       | 3.0 to 3.9     |
-| Extremely Moist  | 4.0 and above  |
+| Drought Severity                | PDSI Range                            |
+| ------------------------------- | ------------------------------------- |
+| Extemely Drought                | -4.0 or less                          |
+| Severe Drought                  | -3.0 to -3.9                          |
+| Moderate Drought                | -2.0 tp -2.9                          |
+| Near Normal                     | -1.9 to 1.9                           |
+| Unusually Moist                 | 2.0 to 2.9                            |
+| Very Moist                      | 3.0 to 3.9                            |
+| Extremely Moist                 | 4.0 and above                         |
 </center>
 
 
@@ -145,7 +145,7 @@ Additionally, the data does *not* support a relationship between any of the drou
 
 
 ## Next Steps
-Given the finding that there does not appear to be a significant correlation between any of these drought indicators and well water levels, it would be interesting to conduct another study focusing perhaps on population growth, geological factors such as recharge rate, etc. to determine what factors may be driving gound water well depletion.
+While this study focused on rolling up all of the conties in Colorado to get a better understanding of the state as a whole, it would be interesting to see if different trends held true for different areas of the state. Additionally, given the finding that there does not appear to be a significant correlation between any of these drought indicators and well water levels, it would be interesting to conduct another study focusing perhaps on population growth, geological factors such as recharge rate, etc. to determine what factors may be driving gound water well depletion. 
 
 ## Citations
 * Dai, Aiguo & National Center for Atmospheric Research Staff (Eds). Last modified 12 Dec 2019. "The Climate Data Guide: Palmer Drought Severity Index (PDSI)." Retrieved from https://climatedataguide.ucar.edu/climate-data/palmer-drought-severity-index-pdsi.
