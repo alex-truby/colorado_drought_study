@@ -84,7 +84,7 @@ The next step was to determine whether or not the difference in the variables be
 
 To get a better understanding of the trends over the entire time period from 2000 - 2016, the following plots illustrate the mean values across across all Colorado counties for each month in this timeframe for each variable. Looking at the data in this continuous manner helps to paint a more clear pictures around what exactly was happending over this time frame. Again, the values captured here represent the mean values across across all Colorado counties for each month in this timeframe.
 
-![Continuous Trends](./images/continuous_trends_1\.png)
+![Continuous Trends](./images/continuous_trends\.png)
 
 While a direct comparison can't be made to the histograms providing only a snapshot presented previously, it seems as as though both PDSI and water level depths illustrate an overall change in slope over the entire time period. Let's dig deeper with another hypothesis test...
 
@@ -97,6 +97,18 @@ This time, rather than a standard t-test on two data sets, a linear regression o
 | SPEI         | -0.001 to 0.003       | 0.196   |
 | Water Levels | 0.619 to 2.062        | <0.01   |
 
+The results above substantiate the previous conclusion that the PDSI has significantly changed over this time period, with a p-value of near zero and both the lower and upper end of the confidence interval containing positive slopes. Additionally, using the linear regression methodoly on the slope rather than simply comparing two snapshots in time indicates that there is also a significant change in water well levels over this time period. More weight will be put on the results of this methodology because it uses data over the entire time period, rather than just the start and end years. Therefor we can conclude the following: 1) Both the PDSI and water well levels *have* significantly changed from 2000 - 2016, and 2) There *is not* enough evidence to conlude that the UDSM and SPEI have significantly changed over these years.
+
+I was a bit surprised at how *different* the results for the three drought indicators were, considering they should theoretically all be measuring the same thing. With the results of this linear regression, someone could hypothetically pick and choose which drought indicator to use as their null hyptohesis, and then point to statistics to "prove" their hypothesis, even though someone with an opposing hypothesis could also do the same thing... interesting.
+
+## Round 3
+After answering the questions around how each variable has changed over the specified time period, the next step was to determine if there are any meaningful relationships between them. I was particularly curious if there was any correlation between the PDSI and water level depths, since both of those have illustrated meaningful changes from 2000 - 2016.
+
+
+#I was a little surprised at how different the results were for three drought indices, considering they should all three be theoretically measuring the same thing. 
+
+![Correlation Matrix](./images/var_correlation_small.png) ![P-Val Matrix](./images/pval_matrix.png)
+
 
 #plots to highlight
 
@@ -107,6 +119,7 @@ This time, rather than a standard t-test on two data sets, a linear regression o
 
 
 #hypothesis testing:
+
 *null hypothesis 1: NO difference in drought indicators form 2000-2016 (run on all three)
 *null hypothesis 2: NO difference in water level depths from 2000 - 2016
 
