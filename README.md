@@ -101,34 +101,34 @@ The results above substantiate the previous conclusion that the PDSI has signifi
 
 I was a bit surprised at how *different* the results for the three drought indicators were, considering they should theoretically all be measuring the same thing. With the results of this linear regression, someone could hypothetically pick and choose which drought indicator to use as their null hyptohesis, and then point to statistics to "prove" their hypothesis, even though someone with an opposing hypothesis could also do the same thing... interesting.
 
-## Round 3
-After answering the questions around how each variable has changed over the specified time period, the next step was to determine if there are any meaningful relationships between them. I was particularly curious if there was any correlation between the PDSI and water level depths, since both of those have illustrated meaningful changes from 2000 - 2016.
+### **_Round 3_**
+After answering the questions around how each variable has changed over the specified time period, the next step was to determine if there are any meaningful relationships between them. I was particularly curious to see if there was any correlation between the PDSI and water level depths, since both of those had illustrated meaningful changes from 2000 - 2016. To go about this, a Spearman's Rank-Order Correlation Test was performed to measure the monotic relationship between each pair of variables. Additionally, this test calculates a pvalue under the null hypothesis that the two variables are unrelated. The results from this test are captured in the matrices below. Again, a significance level of 0.05 is assumed. 
 
 
-#I was a little surprised at how different the results were for three drought indices, considering they should all three be theoretically measuring the same thing. 
+<table>
 
-![Correlation Matrix](./images/var_correlation_small.png) ![P-Val Matrix](./images/pval_matrix.png)
-
-
-#plots to highlight
-
-#make a chart of the palues for the correlation matrix - shading
-#put in chart for three drought indices over time
-#put in chart for water well change over time (remember to multiple * -1 to better illustrate decreasing water levels)
+  <tr>
+    <td><img src="./images/var_correlation_small.png" width=480 height=480></td>
+    <td><img src="./images/pval_final.png" width=480 height=480></td>
+  </tr>
+ </table>
 
 
-
-#hypothesis testing:
-
-*null hypothesis 1: NO difference in drought indicators form 2000-2016 (run on all three)
-*null hypothesis 2: NO difference in water level depths from 2000 - 2016
+The results of this test indicate that even though both the PDSI and water levels individually deomstrate meaningful change from 2000 - 2016, they do not seem to be correlated with one another. Surprisingly, the PDSI showed strong correlation with both the UDSM and SPEI drought indicators. This correlation was re-enforced with p-values below 0.01, leading to the rejection of the null hyptohesis that there is no correlation between the PDSI and USDM and PDSI and SPEI indicators. While this was unexpected becasue neither the USDM nor SPEI indicators demonstrated meaningful change over the time period of the study, it is reassuring to see that indices which are supposed to be measuring the same thing do indeed show a correlation. Furthermore, these results indicate that well water levels do not seem to correleate strongly with *any* of the three drought indicators.
 
 
 
 #no correlation between well water levels and drought
-#would be intersting to extend the study to include other factors (population growth/decline, geology factors such as recharge time, etc. )
+
 
 #after finding no correlation between these - wanted to focus on how drought and water level depths are trending over the state indiviually with time
+
+## Conclusion
+Null hypothesis were that there is no significant chagnes over the years and that none of the variables are correlated
+
+
+## Next Steps
+Given the finding that there does not appear to be a significant correlation between any of these drought indicators and well water levels, it would be interesting to conduct another study focusing perhaps on population growth, geological factors such as recharge rate, etc. to determine what factors may be driving gound water well depletion.
 
 ## Citations
 * Dai, Aiguo & National Center for Atmospheric Research Staff (Eds). Last modified 12 Dec 2019. "The Climate Data Guide: Palmer Drought Severity Index (PDSI)." Retrieved from https://climatedataguide.ucar.edu/climate-data/palmer-drought-severity-index-pdsi.
