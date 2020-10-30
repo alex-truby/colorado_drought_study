@@ -97,7 +97,7 @@ The first dive into the data set involved comparing a snapshot of each variable 
 Before running the hypothesis tests, histograms of the mean drought indices and water well levels were created in order to gain insight as to how the means of each variable may have shifted over this time frame. The values captured here represent the mean values across across all Colorado counties to get a better feel for the condition of the state as a whole.
 
 
-![Histograms](./images/variable_histograms.png)
+![Histograms](./images/hists_final.png)
 
 
 As illustrated in the charts above, there seems to be at least some shift across the board between 2000 and 2016.  It cannot be determined however, whether or not this is enough of a shift to be statistically meaningful without first running a hypothesis test...
