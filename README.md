@@ -20,7 +20,7 @@ The search for a drought data set quickly led to the realization that there are,
 
 | Drought Severity                | PDSI Range                            |
 | ------------------------------- | ------------------------------------- |
-| Extemely Drought                | -4.0 or less                          |
+| Extreme Drought                | -4.0 or less                          |
 | Severe Drought                  | -3.0 to -3.9                          |
 | Moderate Drought                | -2.0 tp -2.9                          |
 | Near Normal                     | -1.9 to 1.9                           |
@@ -34,6 +34,19 @@ The search for a drought data set quickly led to the realization that there are,
 
 
 * **Standardized Precipitation Evapotranspiration Index (SPEI) -** The SPEI is an extension of the precipitaion index utilized in the PDSI model, but also includes potential surface water evapotranspiration. Because of this, the SPEI should also account for the impact on water demand from increased temperature. More information can be found [here](https://climatedataguide.ucar.edu/climate-data/standardized-precipitation-evapotranspiration-index-spei). An exact breakdown of the SPEI index could not  be found, but the general trend follows that of the PDSI, with positive values indicating more moisture, and negative values indicating increaseing drought conditions. 
+
+<div align="center">
+
+| Drought Severity                | PDSI Range                            |
+| ------------------------------- | ------------------------------------- |
+| Exceptional Drought             | -2.0 or less                          |
+| Extreme Drought                 | -1.6 to -1.9                          |
+| Severe Drought                  | -1.3 to -1.5                          |
+| Moderate Drought                | -0.8 to -1.2                          |
+| Abnormally Dry                  | -0.5 to -0.7                          |
+
+
+<div align="left">
 
 *  **United States Drought Monitor (UDSM) -** The USDM is published and mainted by the National Drought Mitigation Center at the University of Nebraska-Lincoln. The UDSM utilizes the PDSI as one of the inputs for the model, along with soil moisture, weekly streamflow measurements from the USGS, and Objective Drought Indicators from the Univserity. More information on this index can be found [here](https://droughtmonitor.unl.edu/About/AbouttheData/DroughtClassification.aspx).
 
