@@ -33,7 +33,7 @@ The search for a drought data set quickly led to the realization that there are,
 
 
 
-* **Standardized Precipitation Evapotranspiration Index (SPEI) -** The SPEI is an extension of the precipitaion index utilized in the PDSI model, but also includes potential surface water evapotranspiration. Because of this, the SPEI should also account for the impact on water demand from increased temperature. More information can be found [here](https://climatedataguide.ucar.edu/climate-data/standardized-precipitation-evapotranspiration-index-spei). An exact breakdown of the SPEI index could not  be found, but the general trend follows that of the PDSI, with positive values indicating more moisture, and negative values indicating increaseing drought conditions. 
+* **Standardized Precipitation Evapotranspiration Index (SPEI) -** The SPEI is an extension of the precipitaion index utilized in the PDSI model, but also includes potential surface water evapotranspiration. Because of this, the SPEI should also account for the impact on water demand from increased temperature. More information can be found [here](https://climatedataguide.ucar.edu/climate-data/standardized-precipitation-evapotranspiration-index-spei). 
 
 <div align="center">
 
