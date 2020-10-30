@@ -73,6 +73,8 @@ The below tabe gives a summary of the raw data sets that were pulled in for anal
 
 As can be inferred by the table above, not all of the columns included in the data sets are relevant to the end goal of this study. The time period 2000 - 2016 was chosen for the focus of this study because that time  period contained the most overlap between the datasets for analysis. The county indicators and date formats in particular, were variables of interest that differed in formatting across all four tables. A dictionary was made from the USDM file to map county name with the corresponding fips value so that each of the files could be tied together on that identifier. Additionally, the dates for each file have been modified to allow grouping so that the quantifiable variables of interest (PDSI, SPEI, UDSM, and Water Level Depth) could be grouped by county and by month for the time period of interest. While there weren't many nulls in the drought index datasets, the ground water well levels were measured at inconsistent increments. The null values from this dataset were dropped, rather than set to zero, so as to not skew the averages when rolled up to a monthly or yearly level.  After many rounds of data cleaning, the final primary set of data used for this study has a shape of 13056  × 8 and contains the columns: **County Fips, Year, Month, PDSI, SPEI, USDM Values, Water Level Depth, Date**. The rows contained outline data for each county in Colorado (total of 64), averaged over each month from 2000 - 2016. The final data contains values that will help capture drought severity, drought length, and water well depths over this time period. 
 
+In regards to the data analysis for this project, the data cleaning, formatting, etc. and the hypothesis tests were performed using python scripts in VSCode. The visualizations were created in Jupyter Notebook.
+
 ----
 
 ## Exploratory Data Analysis
@@ -160,6 +162,9 @@ While most of this study has focused on the state of Colorado as a whole. A stre
 
 ![Counties GIF](./images/counties_full_pdsi.gif)
 
+
+
+------
 ## Conclusion
 The stated goals of this study were to address the following questions:
 
@@ -177,9 +182,12 @@ As demonstrated by both the hypothesis tests and the correlation matrix, there *
 Additionally, the data does *not* support a relationship between any of the drought indicators and ground water level depths. 
 
 
+-----
 ## Next Steps
 While this study focused on rolling up all of the conties in Colorado to get a better understanding of the state as a whole, it would be interesting to see if different trends held true for different areas of the state. Additionally, given the finding that there does not appear to be a significant correlation between any of these drought indicators and well water levels, it would be interesting to conduct another study focusing perhaps on population growth, geological factors such as permeability and recharge rate, etc. to determine what factors may be driving gound water well depletion. 
 
+
+-----
 ## Citations
 * Dai, Aiguo & National Center for Atmospheric Research Staff (Eds). Last modified 12 Dec 2019. "The Climate Data Guide: Palmer Drought Severity Index (PDSI)." Retrieved from https://climatedataguide.ucar.edu/climate-data/palmer-drought-severity-index-pdsi.
 * Vicente-Serrano, Sergio M. & National Center for Atmospheric Research Staff (Eds). Last modified 18 Jul 2015. "The Climate Data Guide: Standardized Precipitation Evapotranspiration Index (SPEI)." Retrieved from https://climatedataguide.ucar.edu/climate-data/standardized-precipitation-evapotranspiration-index-spei.
